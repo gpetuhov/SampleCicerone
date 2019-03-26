@@ -5,6 +5,9 @@ import ru.terrakok.cicerone.Cicerone
 import ru.terrakok.cicerone.Router
 import ru.terrakok.cicerone.NavigatorHolder
 
+// In this example the application class provides NavigationHolder and Router.
+// In production it is better to use Dagger for this.
+
 class App : Application() {
 
     companion object {

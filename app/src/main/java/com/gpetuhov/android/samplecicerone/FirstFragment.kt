@@ -7,6 +7,8 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import kotlinx.android.synthetic.main.fragment_first.*
 
+// First screen of the app
+
 class FirstFragment : Fragment() {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
@@ -17,6 +19,7 @@ class FirstFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         navigateToSecondButton.setOnClickListener {
+            // This is how to navigate between screens
             App.application.getRouter().navigateTo(Screens.Second())
         }
     }
