@@ -22,7 +22,7 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    override fun onResumeFragments() {
+    override fun onResume() {
         super.onResume()
         App.application.getNavigatorHolder().setNavigator(navigator)
     }
@@ -30,5 +30,9 @@ class MainActivity : AppCompatActivity() {
     override fun onPause() {
         super.onPause()
         App.application.getNavigatorHolder().removeNavigator()
+    }
+
+    override fun onBackPressed() {
+        App.application.getRouter().exit()
     }
 }
