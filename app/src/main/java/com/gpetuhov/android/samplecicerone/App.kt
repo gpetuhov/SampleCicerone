@@ -8,7 +8,7 @@ import ru.terrakok.cicerone.NavigatorHolder
 class App : Application() {
 
     companion object {
-        lateinit var application: Application
+        lateinit var application: App
     }
 
     private lateinit var cicerone: Cicerone<Router>
